@@ -1,0 +1,33 @@
+1. creating basic Project
+
+2. Adding Links
+  -> adding link thorough simple link tag
+
+3. Styling Pages -> vanilla CSS, Tailwind CSS
+  -> used vanilla CSS 
+
+4. Adding Component Styling
+  -> Remix does not directly link styles on importing
+  -> we have to use link method like in html we do.
+  -> syntax:
+    import styles from './styles.css';
+    export function links(){
+      return [{rel: 'stylesheet', href: styles}];
+    }
+  -> here default component will atomatically look for the link tag if present then add links to the code.
+
+5. Active Link Styling 
+  -> To give active link a different color we have used NavLink.
+
+6. Adding Form Storage Operation
+  -> Created Form with simple fomr tag that we use in html, react.
+7. Storing data in json file
+  -> In Remix we do not use useState, useEffect to handle form data.
+  -> we use action method to fetch form data and store it.
+
+8. retriving that stored data.
+  -> In Remix we use Loader function whenever we have to fetch the data from database or some component.
+  
+9. Error Handling -> route error, form error, data error
+10. Dynamic Routing -> creating and fetching data through it
+// 9 and 10 not working properly
